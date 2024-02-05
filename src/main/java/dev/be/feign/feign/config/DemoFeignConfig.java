@@ -1,4 +1,4 @@
-package dev.be.feign.config;
+package dev.be.feign.feign.config;
 
 import dev.be.feign.feign.interceptor.DemoFeignInterceptor;
 import org.springframework.context.annotation.Bean;
