@@ -19,7 +19,10 @@ public interface DemoFeignClient {
                                              @RequestParam("name") String name,
                                              @RequestParam("age") Long age);
 
-    @PostMapping("/post") //-> http://localhost:8080/target_server/get
+    @PostMapping("/post") //-> http://localhost:8080/target_server/post
     ResponseEntity<BaseResponseInfo> callPost(@RequestHeader("CustomHeaderName") String customHeader,
                                               @RequestBody BaseRequestInfo baseRequestInfo);
+
+    @GetMapping("/error") //-> http://localhost:8080/target_server/error
+    ResponseEntity<BaseResponseInfo> callError();
 }

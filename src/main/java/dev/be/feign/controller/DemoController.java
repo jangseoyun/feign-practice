@@ -21,4 +21,10 @@ public class DemoController {
         demoService.post();
         return "post";
     }
+
+    @GetMapping("/error")
+    public String errorController() {
+        demoService.errorDecoder();
+        return "error";
+    }
 }
